@@ -9,20 +9,47 @@ import { LookupService } from './plugins/lookup.service';
 export class AppComponent implements OnInit {
 
   plugins: PluginOptions[] = [];
-  workflow: PluginOptions[] = [];
+  // workflow: PluginOptions[] = [];
+  workflow2: PluginOptions;
   showConfig = false;
 
   constructor(
     private lookupService: LookupService) {
   }
 
-  async ngOnInit(): Promise<void> {
-    this.plugins = await this.lookupService.lookup();
+  lookup(): Promise<PluginOptions[]> {
+    return Promise.resolve([
+        {
+            remoteEntry: 'http://localhost:3000/remoteEntry.js',
+            remoteName: 'mfe1',
+            exposedModule: './Download',
+
+            displayName: 'Download',
+            componentName: 'DownloadComponent'
+        }
+    ] as PluginOptions[]);
+  }
+  lookup2(): Promise<PluginOptions> {
+    return Promise.resolve(
+        {
+            remoteEntry: 'http://localhost:3000/remoteEntry.js',
+            remoteName: 'mfe1',
+            exposedModule: './Download',
+
+            displayName: 'Download',
+            componentName: 'DownloadComponent'
+        } as PluginOptions);
   }
 
-  add(plugin: PluginOptions): void {
-    this.workflow.push(plugin);
+  async ngOnInit(): Promise<void> {
+    // this.workflow = await this.lookup();
+    // this.workflow = this.plugins;
+    this.workflow2 = await this.lookup2();
   }
+
+  // add(plugin: PluginOptions): void {
+  //   this.workflow.push(plugin);
+  // }
 
   toggle(): void {
     this.showConfig = !this.showConfig;

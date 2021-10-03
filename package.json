@@ -19,6 +19,7 @@
   "dependencies": {
     "@angular-architects/module-federation": "^12.4.0",
     "@angular-architects/module-federation-runtime": "^12.4.0",
+    "@angular-devkit/architect": "^0.1202.8",
     "@angular/animations": "^12.0.0",
     "@angular/common": "^12.0.0",
     "@angular/compiler": "^12.0.0",
