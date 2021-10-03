@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { ConfigComponent } from './config/config.component';
-import { PluginProxyComponent } from './plugins/plugin-proxy.component';
+import { Mfe1AppComponent } from './plugins/mfe1-app.component';
 
 @NgModule({
   imports: [
@@ -13,7 +13,7 @@ import { PluginProxyComponent } from './plugins/plugin-proxy.component';
   ],
   declarations: [
     AppComponent,
-    PluginProxyComponent,
+    Mfe1AppComponent,
     ConfigComponent
   ],
   providers: [],

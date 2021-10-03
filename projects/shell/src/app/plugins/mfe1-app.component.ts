@@ -3,12 +3,12 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from './plugin';
 
 @Component({
-    selector: 'plugin-proxy',
+    selector: 'mfe1-app',
     template: `
         <ng-container #placeHolder></ng-container>
     `
 })
-export class PluginProxyComponent implements OnChanges {
+export class Mfe1AppComponent implements OnChanges {
     @ViewChild('placeHolder', { read: ViewContainerRef, static: true })
     viewContainer: ViewContainerRef;
 
