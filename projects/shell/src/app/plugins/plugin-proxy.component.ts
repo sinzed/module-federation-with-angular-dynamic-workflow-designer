@@ -46,10 +46,10 @@ export class PluginProxyComponent implements OnChanges {
             {
                 remoteEntry: 'http://localhost:3000/remoteEntry.js',
                 remoteName: 'mfe1',
-                exposedModule: './Download',
+                exposedModule: './App',
     
-                displayName: 'Download',
-                componentName: 'DownloadComponent'
+                displayName: 'App',
+                componentName: 'AppComponent'
             } as PluginOptions);
       }
 }
