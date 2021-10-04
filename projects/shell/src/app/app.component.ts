@@ -1,6 +1,5 @@
-import { PluginOptions } from './plugins/plugin';
+import { PluginOptions } from './remote-frontends/plugin';
 import { Component, OnInit } from '@angular/core';
-import { LookupService } from './plugins/lookup.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +12,7 @@ export class AppComponent implements OnInit {
   workflow2: PluginOptions;
   showConfig = false;
 
-  constructor(
-    private lookupService: LookupService) {
+  constructor() {
   }
 
   async ngOnInit(): Promise<void> {

@@ -3,12 +3,12 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from './plugin';
 
 @Component({
-    selector: 'mfe1-app',
+    selector: 'mfe1-facebook',
     template: `
         <ng-container #placeHolder></ng-container>
     `
 })
-export class Mfe1AppComponent implements OnChanges {
+export class Mfe1FacebookComponent implements OnChanges {
     @ViewChild('placeHolder', { read: ViewContainerRef, static: true })
     viewContainer: ViewContainerRef;
 
@@ -45,7 +45,7 @@ export class Mfe1AppComponent implements OnChanges {
         return Promise.resolve(
             {
                 remoteEntry: 'http://localhost:3000/remoteEntry.js',
-                remoteName: 'mfe1',
+                remoteName: 'mfeFacebook',
                 exposedModule: './App',
     
                 displayName: 'App',

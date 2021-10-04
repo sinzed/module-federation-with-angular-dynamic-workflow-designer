@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'mfe2-analyze',
+    selector: 'mfe-download',
     template: `
         <div class="task">
-            <img src="http://localhost:3001/assets/analyze.png">
-            <p>Analyze</p>
+            <img src="http://localhost:3000/assets/download.png">
+            <p>Download</p>
         </div>
     `
 })
 
-export class AnalyzeComponent implements OnInit {
+export class DownloadComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }

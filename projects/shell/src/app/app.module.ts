@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { ConfigComponent } from './config/config.component';
-import { Mfe1AppComponent } from './plugins/mfe1-app.component';
+import { Mfe1FacebookComponent } from './remote-frontends/mfe1-facebook.component';
 
 @NgModule({
   imports: [
@@ -13,7 +13,7 @@ import { Mfe1AppComponent } from './plugins/mfe1-app.component';
   ],
   declarations: [
     AppComponent,
-    Mfe1AppComponent,
+    Mfe1FacebookComponent,
     ConfigComponent
   ],
   providers: [],

@@ -114,38 +114,38 @@
         }
       }
     },
-    "mfe1": {
+    "mfeFacebook": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/mfe1",
-      "sourceRoot": "projects/mfe1/src",
+      "root": "projects/mfeFacebook",
+      "sourceRoot": "projects/mfeFacebook/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/mfe1",
-            "index": "projects/mfe1/src/index.html",
-            "main": "projects/mfe1/src/main.ts",
-            "polyfills": "projects/mfe1/src/polyfills.ts",
-            "tsConfig": "projects/mfe1/tsconfig.app.json",
+            "outputPath": "dist/mfeFacebook",
+            "index": "projects/mfeFacebook/src/index.html",
+            "main": "projects/mfeFacebook/src/main.ts",
+            "polyfills": "projects/mfeFacebook/src/polyfills.ts",
+            "tsConfig": "projects/mfeFacebook/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/mfe1/src/favicon.ico",
-              "projects/mfe1/src/assets"
+              "projects/mfeFacebook/src/favicon.ico",
+              "projects/mfeFacebook/src/assets"
             ],
             "styles": [
-              "projects/mfe1/src/styles.css"
+              "projects/mfeFacebook/src/styles.css"
             ],
             "scripts": [],
-            "extraWebpackConfig": "projects/mfe1/webpack.config.js"
+            "extraWebpackConfig": "projects/mfeFacebook/webpack.config.js"
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/mfe1/src/environments/environment.ts",
-                  "with": "projects/mfe1/src/environments/environment.prod.ts"
+                  "replace": "projects/mfeFacebook/src/environments/environment.ts",
+                  "with": "projects/mfeFacebook/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -156,55 +156,55 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "extraWebpackConfig": "projects/mfe1/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/mfeFacebook/webpack.prod.config.js"
             }
           }
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "mfe1:build",
+            "browserTarget": "mfeFacebook:build",
             "port": 3000,
-            "extraWebpackConfig": "projects/mfe1/webpack.config.js"
+            "extraWebpackConfig": "projects/mfeFacebook/webpack.config.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mfe1:build:production",
-              "extraWebpackConfig": "projects/mfe1/webpack.prod.config.js"
+              "browserTarget": "mfeFacebook:build:production",
+              "extraWebpackConfig": "projects/mfeFacebook/webpack.prod.config.js"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mfe1:build"
+            "browserTarget": "mfeFacebook:build"
           }
         },
         "test": {
           "builder": "ngx-build-plus:karma",
           "options": {
-            "main": "projects/mfe1/src/test.ts",
-            "polyfills": "projects/mfe1/src/polyfills.ts",
-            "tsConfig": "projects/mfe1/tsconfig.spec.json",
-            "karmaConfig": "projects/mfe1/karma.conf.js",
+            "main": "projects/mfeFacebook/src/test.ts",
+            "polyfills": "projects/mfeFacebook/src/polyfills.ts",
+            "tsConfig": "projects/mfeFacebook/tsconfig.spec.json",
+            "karmaConfig": "projects/mfeFacebook/karma.conf.js",
             "assets": [
-              "projects/mfe1/src/favicon.ico",
-              "projects/mfe1/src/assets"
+              "projects/mfeFacebook/src/favicon.ico",
+              "projects/mfeFacebook/src/assets"
             ],
             "styles": [
-              "projects/mfe1/src/styles.css"
+              "projects/mfeFacebook/src/styles.css"
             ],
             "scripts": [],
-            "extraWebpackConfig": "projects/mfe1/webpack.config.js"
+            "extraWebpackConfig": "projects/mfeFacebook/webpack.config.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/mfe1/tsconfig.app.json",
-              "projects/mfe1/tsconfig.spec.json",
-              "projects/mfe1/e2e/tsconfig.json"
+              "projects/mfeFacebook/tsconfig.app.json",
+              "projects/mfeFacebook/tsconfig.spec.json",
+              "projects/mfeFacebook/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -214,12 +214,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/mfe1/e2e/protractor.conf.js",
-            "devServerTarget": "mfe1:serve"
+            "protractorConfig": "projects/mfeFacebook/e2e/protractor.conf.js",
+            "devServerTarget": "mfeFacebook:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mfe1:serve:production"
+              "devServerTarget": "mfeFacebook:serve:production"
             }
           }
         }

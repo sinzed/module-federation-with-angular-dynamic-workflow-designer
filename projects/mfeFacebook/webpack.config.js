@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "mfe2",
+    uniqueName: "mfeFacebook",
     publicPath: "auto"
   },
   optimization: {
@@ -24,11 +24,10 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
 
-      name: "mfe2",
+      name: "mfeFacebook",
       filename: "remoteEntry.js",
       exposes: {
-        './Analyze': './projects/mfe2/src/app/analyze.component.ts',
-        './Enrich': './projects/mfe2/src/app/enrich.component.ts'
+        './App': './projects/mfeFacebook/src/app/app.component.ts'
       },
 
       shared: share({
