@@ -6,7 +6,7 @@
     "start:shell": "ng serve shell  -o",
     "build:shell": "ng build shell --configuration",
     "start": "npm run start:shell",
-    "build": "npm run build:shell && npm run build:mfeFacebook",
+    "build": "npm run build:shell",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
