@@ -3,7 +3,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from './plugin';
 
 @Component({
-    selector: 'mfe1-facebook',
+    selector: 'mfeFacebook',
     template: `
         <ng-container #placeHolder></ng-container>
     `
