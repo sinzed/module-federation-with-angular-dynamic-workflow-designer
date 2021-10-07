@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { ConfigComponent } from './config/config.component';
 import { Mfe1FacebookComponent } from './remote-frontends/mfeFacebook.component';
+import { MfeInstgramComponent } from './remote-frontends/mfeInstgram.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { Mfe1FacebookComponent } from './remote-frontends/mfeFacebook.component'
   declarations: [
     AppComponent,
     Mfe1FacebookComponent,
+    MfeInstgramComponent,
     ConfigComponent
   ],
   providers: [],
