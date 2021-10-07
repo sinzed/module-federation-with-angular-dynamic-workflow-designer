@@ -5,7 +5,7 @@ const share = mf.share;
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
-  path.join(__dirname, '../../tsconfig.json'),
+  path.join(__dirname, './tsconfig.json'),
   [/* mapped paths to share */]);
 
 module.exports = {
@@ -27,7 +27,7 @@ module.exports = {
       name: "mfeFacebook",
       filename: "remoteEntry.js",
       exposes: {
-        './App': './projects/mfeFacebook/src/app/app.component.ts'
+        './App': './src/app/app.component.ts'
       },
 
       shared: share({
