@@ -1,5 +1,4 @@
-# FederationDemo
-
+# Zuckerberg Microfrontends with Angular and Module Federation
 Demonstrates webpack 5 Module Federation with Angular and the Angular Router.
 
 ![Workflow Designer](./result.png)
