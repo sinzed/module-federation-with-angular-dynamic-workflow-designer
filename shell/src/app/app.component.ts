@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   showConfig = false;
 
   constructor() {
+    localStorage.setItem("token","stragneworkd");
   }
 
   async ngOnInit(): Promise<void> {
