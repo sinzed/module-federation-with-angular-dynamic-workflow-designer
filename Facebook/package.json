@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start:mfeFacebook": "ng serve mfeFacebook  -o",
-    "build:mfeFacebook": "ng build mfeFacebook --configuration",
+    "build:mfeFacebook": "ng build mfeFacebook --configuration production",
     "start": "npm run start:mfeFacebook",
-    "build": "npm run build:mfeFacebook && npm run build:mfeFacebook",
+    "build": "npm run build:mfeFacebook",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start:mfeInstagram": "ng serve mfeInstagram  -o",
-    "build:mfeInstagram": "ng build mfeInstagram --configuration",
+    "build:mfeInstagram": "ng build mfeInstagram --configuration production",
     "start": "npm run start:mfeInstagram",
     "build": "npm run build:mfeInstagram && npm run build:mfeInstagram",
     "test": "ng test",

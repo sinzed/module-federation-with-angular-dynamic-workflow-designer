@@ -44,7 +44,7 @@ export class MfeInstgramComponent implements OnChanges {
     lookup(): Promise<PluginOptions> {
         return Promise.resolve(
             {
-                remoteEntry: 'http://localhost:4000/remoteEntry.js',
+                remoteEntry: 'http://localhost:8080/remoteEntry.js',
                 remoteName: 'mfeInstagram',
                 exposedModule: './App',
     

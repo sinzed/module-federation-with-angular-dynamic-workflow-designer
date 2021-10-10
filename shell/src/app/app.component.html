@@ -5,8 +5,9 @@
     <li><a>Whatsapp</a></li>
     <li><a>Instagram</a></li>
 </ul>
-
-<mfeFacebook></mfeFacebook>
+<ng-container *ngIf="showFacebook">
+    <mfeFacebook></mfeFacebook>
+</ng-container>
 <mfeInstagram style="    
 margin-top: 10px;
 display: block;

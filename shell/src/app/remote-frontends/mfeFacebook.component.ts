@@ -44,7 +44,7 @@ export class Mfe1FacebookComponent implements OnChanges {
     lookup2(): Promise<PluginOptions> {
         return Promise.resolve(
             {
-                remoteEntry: 'http://localhost:3000/remoteEntry.js',
+                remoteEntry: 'http://localhost:8080/remoteEntry.js',
                 remoteName: 'mfeFacebook',
                 exposedModule: './App',
     
