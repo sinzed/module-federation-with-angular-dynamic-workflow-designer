@@ -3,9 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  mfeFacebookUrl: 'http://localhost/mfeFacebook/remoteEntry.js',
-  mfeLoginUrl: 'http://localhost:8079/remoteEntry.js',
+  production: false
 };
 
 /*

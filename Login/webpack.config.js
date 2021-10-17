@@ -10,8 +10,8 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "mfeFacebook",
-    publicPath: "http://localhost/mfeFacebook/"
+    uniqueName: "mfeLogin",
+    publicPath: "auto"
   },
   optimization: {
     runtimeChunk: false
@@ -24,10 +24,11 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
 
-      name: "mfeFacebook",
+      name: "mfeLogin",
       filename: "remoteEntry.js",
       exposes: {
-        './App': './src/app/app.component.ts'
+        './App': './src/app/app.component.ts',
+        './Module': './src/app/login/login.module.ts',
       },
 
       shared: share({

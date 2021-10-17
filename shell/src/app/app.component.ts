@@ -11,16 +11,17 @@ export class AppComponent implements OnInit {
   // workflow: PluginOptions[] = [];
   workflow2: PluginOptions;
   showConfig = false;
-  showFacebook = false;
+  loggedIn = false;
 
   constructor() {
     localStorage.setItem("token","stragneworkd");
   }
 
   async ngOnInit(): Promise<void> {
-    setTimeout(()=>{
-        this.showFacebook = true;
-    }, 2000);
+    const token = localStorage.getItem("token");
+    if(token==="123456789"){
+      this.loggedIn = true;
+    }
   }
   toggle(): void {
     this.showConfig = !this.showConfig;
