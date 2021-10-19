@@ -4,6 +4,7 @@ import { ConfigComponent } from './config/config.component';
 import { MfeLoginComponent } from './remote-frontends/mfeLogin.component';
 import { Mfe1FacebookComponent } from './remote-frontends/mfeFacebook.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { AppComponent } from './app.component';
 
 
 export const APP_ROUTES: Routes = [

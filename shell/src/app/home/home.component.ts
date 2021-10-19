@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  showConfig = false;
+  loggedIn = false;
   ngOnInit() {
+    const token = localStorage.getItem("token");
+    if(token==="123456789"){
+      this.loggedIn = true;
+    }
   }
 
 }

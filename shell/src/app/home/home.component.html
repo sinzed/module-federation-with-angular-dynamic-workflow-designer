@@ -1,1 +1,11 @@
-<h1>Welcome!</h1>
+<div *ngIf="loggedIn">
+    <mfeFacebook></mfeFacebook>
+    <mfeInstagram style="    
+        margin-top: 10px;
+        display: block;
+        "></mfeInstagram>
+</div>
+
+<ng-container *ngIf="!loggedIn">
+    Please <a href="/login">Login</a> to see the home page content
+</ng-container>

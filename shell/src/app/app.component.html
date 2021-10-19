@@ -1,24 +1,10 @@
 <ul>
     <li><img src="" width="50"></li>
-    <li><a>Facebook</a></li>
-    <li><a>Whatsapp</a></li>
-    <li><a>Instagram</a></li>
-    <li><a>Login</a></li>
-    <li><a routerLink="/flights/flights-search">Flights</a></li>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/facebook">Facebook</a></li>
+    <li><a routerLink="/wahtsapp">Whatsapp</a></li>
+    <li><a routerLink="/instagram">Instagram</a></li>
+    <li><a routerLink="/login">Login</a></li>
 </ul>
-<ng-container *ngIf="loggedIn">
-    <mfeFacebook></mfeFacebook>
-</ng-container>
-<ng-container *ngIf="!loggedIn">
-   Please <a href="/login">Login</a> to see the facebook page
-   <!-- <mfeLogin></mfeLogin> -->
-</ng-container>
-<!-- <mfeInstagram style="    
-margin-top: 10px;
-display: block;
-"></mfeInstagram> -->
-
-<p style="clear:both">&nbsp;</p>
-<p>&nbsp;</p>
-<app-config *ngIf="showConfig"></app-config>
 <router-outlet></router-outlet>
+

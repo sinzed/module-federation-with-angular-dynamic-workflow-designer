@@ -2,11 +2,17 @@
 
 <!-- <mfe1-upload></mfe1-upload> -->
 <!-- <mfe1-download></mfe1-download> -->
-<div style="border: 1px; border-style: dashed; border-color: blue; padding: 10px;">
+<div *ngIf="!signedIn" style="border: 1px; border-style: dashed; border-color: blue; padding: 10px;">
 
     <div>Login</div>
-    <div>username: <input/></div>
-    <div>password: <input type="password"/></div>
-    <button>Login</button>
+    <div>username: <input type="text" [(ngModel)]="username" name="username"/> </div>
+    <div>password: <input [(ngModel)]="password" type="password"/></div>
+    <button (click)="checkAndLogin()">Login</button>
+    <ng-container *ngIf="error.length>0">
+        Sorry! username or password is wrong
+    </ng-container>
  
+ </div>
+ <div *ngIf="signedIn">
+     <a (click)="logout()">Logout</a>
  </div>
